@@ -1,8 +1,9 @@
 from typing import List
 
+
 class Solution:
     def removeElement(self, nums: List[int], val: int) -> int:
-        i = len(nums)-1
+        i = len(nums) - 1
         while i >= 0:
             if nums[i] == val:
                 del nums[i]
@@ -10,7 +11,7 @@ class Solution:
             i -= 1
 
 
-nums = [3,2,2,3]
+nums = [3, 2, 2, 3]
 val = 3
 solution = Solution()
 solution.removeElement(nums, val)
@@ -54,7 +55,7 @@ solution.removeElement(nums, val)
 # Explanation: Your function should return k = 5, with the first five elements of nums containing 0, 0, 1, 3, and 4.
 # Note that the five elements can be returned in any order.
 # It does not matter what you leave beyond the returned k (hence they are underscores).
- 
+
 
 # Constraints:
 
